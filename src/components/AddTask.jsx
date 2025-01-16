@@ -26,11 +26,11 @@ function AddTask() {
         <div>
             <h2>Add New Task</h2>
             <form action="" onSubmit={handleSubmit} className="flex flex-col gap-4 *:outline-none *:border *:border-slate-400 *:p-2 *:rounded-sm">
-                <input type="text" placeholder="Task Name" className="focus:border-blue-600"
+                <input type="text" placeholder="Task Name" className="focus:border-blue-600" required
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                 />
-                <textarea name="" id="" placeholder="Task Description" className="resize-none focus:border-blue-600 "
+                <textarea name="" id="" placeholder="Task Description" className="resize-none focus:border-blue-600 " required
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
                 ></textarea>

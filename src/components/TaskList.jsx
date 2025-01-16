@@ -60,9 +60,9 @@ function TaskList() {
                     {
                         tasks && [...filterdTasks]?.reverse().map((task) => {
                             return <li key={task.id} className="bg-gray-100 p-[20px] flex items-center justify-between gap-4 w-full rounded-md">
-                                <div>
+                                <div className=" flex-1 max-w-[75%]">
                                     <p className="font-bold">{task.title}</p>
-                                    {task.description && <p className="text-slate-400">{task.description}</p>}
+                                    {task.description && <p className="text-slate-800 break-words">{task.description}</p>}
                                     <p className="text-slate-600">Status:<span className="underline italic"> {task.status}</span></p>
                                 </div>
                                 <div className="flex items-center gap-4 *:transition-all *:duration-200">
